@@ -9,13 +9,13 @@ int lifetime = 40;
 
 // The light strand is set up in a snaking fashion to create
 // the grid. This is the encoding for how that is.
-int indexCoding[7][7] = { {  1,  2,  3,  4,  5,  6,  7 },
-                          { 14, 13, 12, 11, 10,  9,  8 },
-                          { 15, 16, 17, 18, 19, 20, 21 },
-                          { 28, 27, 26, 25, 24, 23, 22 },
-                          { 29, 30, 31, 32, 33, 34, 35 },
-                          { 42, 41, 40, 39, 38, 37, 36 },
-                          { 43, 44, 45, 46, 47, 48, 49 } };
+int indexCoding[7][7] = { {  0, 1,  2,  3,  4,  5,  6, },
+                          { 13, 12, 11, 10,  9,  8,  7 },
+                          { 14, 15, 16, 17, 18, 19, 20 },
+                          { 27, 26, 25, 24, 23, 22, 21 },
+                          { 28, 29, 30, 31, 32, 33, 34 },
+                          { 41, 40, 39, 38, 37, 36, 35 },
+                          { 42, 43, 44, 45, 46, 47, 48 } };
 
 // This matrix holds the R, G, B, R_step, G_step, B_step, and 
 // number of steps lived for each position
